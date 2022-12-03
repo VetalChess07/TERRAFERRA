@@ -256,6 +256,7 @@
 
 .footer {
    margin: 0 auto;
+
    width: 100%;
    max-width: 1376px;
    margin-top: 120px;
@@ -269,7 +270,7 @@
    .footer__text {
       font-size: 32px;
       line-height: 37px;
-
+      padding: 0 10px;
       text-transform: uppercase;
 
       color: #FBFBFB;
@@ -282,6 +283,8 @@
    }
 
    .footer__inner {
+      background-color: #EBEAEC;
+      padding: 43px 0;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -289,12 +292,32 @@
 
       .footer__item {
          display: flex;
+         padding: 0 10px;
 
-         .logo__link {}
 
-         .logo {}
 
-         .privacy__policy {}
+         .privacy__policy {
+            font-size: 14px;
+            line-height: 16px;
+
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #3D3745;
+            padding: 0 39px 0 0;
+         }
+
+         .copyright {
+            font-size: 14px;
+            line-height: 16px;
+
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #3D3745;
+         }
 
 
       }

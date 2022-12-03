@@ -67,9 +67,11 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "GTWalsheimPro-Medium";
@@ -342,6 +344,7 @@ h2 {
 .footer .footer__text {
   font-size: 32px;
   line-height: 37px;
+  padding: 0 10px;
   text-transform: uppercase;
   color: #FBFBFB;
   padding: 73px 196px 0 196px;
@@ -350,6 +353,8 @@ h2 {
   margin: 78px 0 58px 0;
 }
 .footer .footer__inner {
+  background-color: #EBEAEC;
+  padding: 43px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +371,24 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 10px;
 }
+.footer .footer__inner .footer__item .privacy__policy {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3D3745;
+  padding: 0 39px 0 0;
+}
+.footer .footer__inner .footer__item .copyright {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3D3745;
+}
+
 @media (max-width: 1288px) {
   .header__inner .header__item .header__item-title {
     margin-top: 10px;
