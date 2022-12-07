@@ -15,7 +15,10 @@
       <div class="header__inner">
          <div class="header__item header__item-logo">
             <a class="logo__link" href="#"><img src="img/logo.png" alt="#" class="logo"></a>
-            <img src="img/docer.png" alt="#" class="logo__docer">
+            <div class="docer__inner">
+               <img src="img/docer.png" alt="#" class="logo__docer">
+            </div>
+
          </div>
          <div class="header__item header__item-text">
             <h1 class="header__item-title">
@@ -41,12 +44,21 @@
 
             </div>
             <div class="intro__item">
-               <img class="intro__img" src="img/intro__img.png" alt="">
+
+               <picture>
+                  <source media="(min-width: 780px)" srcset="img/intro__img.png">
+
+                  <img class="intro__img" src="img/intro_img_media.png" alt="#">
+               </picture>
+
+
+
+
             </div>
          </div>
       </div>
    </section>
-   <section class="section">
+   <section class="">
       <div class="attraction">
 
          <div class="attraction__inner-background">
@@ -59,14 +71,14 @@
             <img class="attraction__img-phone" src="img/attraction__phone.png" alt="">
          </div>
          <div class="attraction__inner">
-            <div class="attraction__item">
+            <div class="attraction__item attraction__item-block">
                <p class="attraction__item-text">
                   With Terra Ferra your most active fans won’t miss a word from you anymore. And they’re not here just
                   to send you likes—they’re here to help you grow, sell more, do more and become more successful than
                   ever.
                </p>
             </div>
-            <div class="attraction__item">
+            <div class="attraction__item attraction__item-block">
                <button class="attraction__item-btn">Join waitlist</button>
             </div>
          </div>
