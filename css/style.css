@@ -114,6 +114,16 @@ h2 {
   font-family: "GTWalsheimPro-Regular";
   src: url(../fonts/GTWalsheimPro-Regular.ttf);
 }
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.intro__title-mobail {
+  display: none;
+}
+
 .header__btn {
   margin-top: 44px;
 }
@@ -121,30 +131,22 @@ h2 {
 .header {
   width: 100%;
   max-width: 1366px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
+  padding: 0 5px;
 }
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .header__inner .header__item .logo {
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.header__item-title {
-  margin-top: 163px;
-  font-size: 128px;
-  line-height: 147px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px;
-  color: #3D3745;
 }
 
 .header__item-span {
@@ -160,8 +162,28 @@ h2 {
           justify-content: space-between;
 }
 
+.intro__row {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .intro__item:first-child {
-  padding-right: 10px;
+  padding-right: 20px;
+}
+
+.intro__title {
+  font-size: 128px;
+  line-height: 147px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #3D3745;
 }
 
 .intro__text {
@@ -190,8 +212,7 @@ h2 {
 }
 
 .attraction {
-  margin-top: 200px;
-  margin: 0 auto;
+  margin: 200px auto 129px auto;
   width: 100%;
   max-width: 1376px;
 }
@@ -351,6 +372,7 @@ h2 {
   position: absolute;
   top: 291px;
   left: -30px;
+  padding: 0;
 }
 .about_us__inner-last .about_us__title {
   width: 326px;
@@ -422,7 +444,7 @@ h2 {
 }
 
 @media (max-width: 1288px) {
-  .header__item-title {
+  .intro__title {
     margin-top: 10px;
   }
   .header__item-logo {
@@ -478,9 +500,16 @@ h2 {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .intro__title {
+    font-size: 95px;
+    line-height: 107px;
+  }
   .intro__text {
     max-width: none;
     text-align: center;
+  }
+  .intro__item:first-child {
+    padding: 0 15px;
   }
   .about_us__inner {
     -webkit-box-orient: vertical;
@@ -532,7 +561,10 @@ h2 {
   }
 }
 @media (max-width: 780px) {
-  .header__item-title {
+  .popup.active {
+    max-width: 550px;
+  }
+  .intro__title {
     font-size: 75px;
     line-height: 107px;
   }
@@ -591,6 +623,16 @@ h2 {
   }
 }
 @media (max-width: 580px) {
+  .popup.active {
+    max-width: 345px;
+  }
+  .intro__title-desct {
+    display: none;
+  }
+  .intro__title-mobail {
+    display: block;
+    margin: 24px 0 37px 0;
+  }
   .attraction__item-btn {
     background: #F27C4F;
   }
@@ -608,13 +650,12 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .header__item-title {
+  .intro__title {
     font-size: 48px;
     line-height: 55px;
     padding: 0;
-    margin: 0;
   }
-  .header__item-title .header__item-span {
+  .intro__title .header__item-span {
     color: #3D3745;
   }
   .header__item-logo {
@@ -639,6 +680,7 @@ h2 {
     -o-object-fit: cover;
        object-fit: cover;
     position: relative;
+    margin-right: -20px;
   }
   .header__item-logo .docer__inner {
     width: 100%;
@@ -775,10 +817,15 @@ h2 {
   }
 }
 @media (max-width: 480px) {
-  .header__item-title {
+  .intro__title {
     font-size: 38px;
   }
-  .about_us__inner-last .about_us__img--phone2 {
-    right: -18px;
+  .popup.active {
+    max-width: 285px;
+    padding: 30px;
+  }
+  .close-popup {
+    top: 10px;
+    right: 10px;
   }
 }

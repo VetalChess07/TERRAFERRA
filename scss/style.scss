@@ -11,22 +11,30 @@
    src: url(../fonts/GTWalsheimPro-Regular.ttf);
 }
 
+main{
+   width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.intro__title-mobail {
+   display: none;
+}
+
 .header__btn {
    margin-top: 44px;
    @extend %button;
 }
 
-
-
-
 .header {
    width: 100%;
    max-width: 1366px;
-   margin: 0 auto;
+   margin: 0 auto 0 auto;
+   padding: 0 5px;
 
    &__inner {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
 
       .header__item {
@@ -38,28 +46,38 @@
    }
 }
 
-
-.header__item-title {
-   margin-top: 163px;
-   font-size: 128px;
-   line-height: 147px;
-   text-align: center;
-   text-transform: uppercase;
-   padding: 10px;
-   color: #3D3745
-}
-
 .header__item-span {
    color: #fff;
 }
+
+
 
 .intro__inner {
    display: flex;
    justify-content: space-between;
 }
 
+.intro__row {
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
 .intro__item:first-child {
-   padding-right: 10px;
+   padding-right: 20px;
+}
+
+
+
+.intro__title {
+
+   font-size: 128px;
+   line-height: 147px;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 10px;
+   color: #3D3745
 }
 
 .intro__text {
@@ -89,9 +107,7 @@
 
 
 .attraction {
-   margin-top: 200px;
-   margin: 0 auto;
-
+   margin: 200px auto 129px auto;
    width: 100%;
    max-width: 1376px;
 }
@@ -241,6 +257,7 @@
       position: absolute;
       top: 291px;
       left: -30px;
+      padding: 0;
    }
 
    .about_us__title {

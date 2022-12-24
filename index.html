@@ -6,11 +6,14 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <link rel="stylesheet" href="css/modal.css">
    <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/media.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+   <main>
    <header class="header">
       <div class="header__inner">
          <div class="header__item header__item-logo">
@@ -18,20 +21,47 @@
             <div class="docer__inner">
                <img src="img/docer.png" alt="#" class="logo__docer">
             </div>
-
-         </div>
-         <div class="header__item header__item-text">
-            <h1 class="header__item-title">
-               Community <br> powered <br> fas<span class="header__item-span">hion</span>
-            </h1>
+            <div class="header__item ">
+               <h1 class="intro__title intro__title-mobail">
+                  Community <br> powered <br> fas<span class="header__item-span">hion</span>
+               </h1>
+            </div>
          </div>
          <div class="header__item header__item-btn">
-            <button class="header__btn">Join waitlist</button>
+            <button class="header__btn btn open-popup">Join waitlist</button>
          </div>
       </div>
    </header>
+   
+
+   
+   <div class="popup__bg">
+      <div class="popup">
+         <div class="close-popup">
+            <div class="close-popup-inner">
+               <div class="close-line-first"></div>
+                <div class="close-line-last"></div> 
+            </div>
+         </div>
+         <input class="popup__input input" placeholder="Name" type="text">
+         <input class="popup__input input" placeholder="E-mail" type="email">
+         <label  class="popup__label" for="checkbox">
+            <input class="popup__checkbox input" id="checkbox"  type="checkbox">
+            <span class="checkbox-style"></span>
+              I agree <span class="popup__span"><a class="popup__link" href="">
+               to Privacy Policy and Terms of Service 
+            </a></span > 
+         </label>
+            <input value="Join waitlist" class="form__button" placeholder="Join waitlist" type="button">
+      </div>
+   </div>
    <section class="section">
       <div class="intro">
+         <div class="intro__row">
+            <h1 class="intro__title intro__title-desct">
+               Community <br> powered <br> fas<span class="header__item-span">hion</span>
+            </h1>
+         </div>
          <div class="intro__inner">
             <div class="intro__item">
                <p class="intro__text"> Can no one see your posts?</p>
@@ -44,21 +74,15 @@
 
             </div>
             <div class="intro__item">
-
                <picture>
                   <source media="(min-width: 780px)" srcset="img/intro__img.png">
-
                   <img class="intro__img" src="img/intro_img_media.png" alt="#">
                </picture>
-
-
-
-
             </div>
          </div>
       </div>
    </section>
-   <section class="">
+   <section class="section">
       <div class="attraction">
 
          <div class="attraction__inner-background">
@@ -79,7 +103,7 @@
                </p>
             </div>
             <div class="attraction__item attraction__item-block">
-               <button class="attraction__item-btn">Join waitlist</button>
+               <button class="attraction__item-btn btn open-popup">Join waitlist</button>
             </div>
          </div>
       </div>
@@ -120,17 +144,22 @@
                   promotions and content creation.</p>
             </div>
             <div class="about_us__item about_us__item-last">
-               <img class="about_us__img about_us__img3" src="img/aboutus3.png" alt="">
+
+               <picture>
+                  <source media="(min-width: 580px)" srcset="img/aboutus3.png">
+                  <img class="about_us__img about_us__img3" src="img/aboutus3__modail.png" alt="#">
+               </picture>
                <img class="about_us__img about_us__img--phone2 " src="img/aboutusphone2.png" alt="">
 
             </div>
          </div>
       </div>
    </section>
+
    <footer class="footer">
       <p class="footer__text">With all the support and insight your superfans are able to give, both your life and
          business can't help but bloom. <br> <br> Are you ready to see what you're really capable of?</p>
-      <button class="footer__button">Join waitlist</button>
+      <button class="footer__button btn open-popup">Join waitlist</button>
       <div class="footer__inner">
          <div class="footer__item"> <a class="logo__link" href="#"><img src="img/logo.png" alt="#" class="logo"></a>
          </div>
@@ -142,6 +171,8 @@
 
       </div>
    </footer>
+</main>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
